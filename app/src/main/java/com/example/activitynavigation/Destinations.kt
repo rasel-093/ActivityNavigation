@@ -9,3 +9,9 @@ object Home:Destinations{
 object MenuList:Destinations{
     override val route = "MenuList"
 }
+object DashBoard:Destinations{
+    override val route: String = "Home"
+}
+object Details:Destinations{
+    override val route: String = "Details"
+}

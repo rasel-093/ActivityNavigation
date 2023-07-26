@@ -20,12 +20,18 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MyNavigation() {
     val navController = rememberNavController()
-    NavHost(navController = navController, startDestination = Home.route ){
+    NavHost(navController = navController, startDestination = DashBoard.route ){
         composable(Home.route){
             HomeScreen(navController)
         }
         composable(MenuList.route){
             MenuListScreen()
+        }
+        composable(DashBoard.route){
+            DashBoardScreen(navController)
+        }
+        composable(Details.route){
+            DetailsScreen()
         }
     }
 }
