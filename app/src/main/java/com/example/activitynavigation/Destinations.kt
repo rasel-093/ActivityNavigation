@@ -7,6 +7,8 @@ object Home:Destinations{
     override val route = "Home"
 }
 object MenuList:Destinations{
+    //This line is written to pass arguments from one activity to another activity
+    const val argOrderNo = "OrderNo"
     override val route = "MenuList"
 }
 object DashBoard:Destinations{

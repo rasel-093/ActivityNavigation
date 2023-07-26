@@ -10,15 +10,29 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun MenuListScreen() {
+fun MenuListScreen(orderNo: Int?) {
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            text = "MenuListScreen",
+            text = "MenuList Order NO $orderNo",
             fontSize = 32.sp
         )
     }
 }
+
+//@Composable
+//fun MenuScreen(orderNo: Int?) {
+//    Column(
+//        Modifier.fillMaxSize(),
+//        verticalArrangement = Arrangement.Center,
+//        horizontalAlignment = Alignment.CenterHorizontally
+//    ) {
+//        Text(
+//            text = "Menu List Order $orderNo",
+//            fontSize = 32.sp
+//        )
+//    }
+//}
